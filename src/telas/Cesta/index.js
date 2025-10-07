@@ -1,23 +1,22 @@
 import react from "react";
 import { FlatList, StyleSheet, View } from "react-native";
 
-export default function Cesta(){
+export default function Cesta(itens){
     <FlatList>
         data={itens.lista}
         renderItem={item}
         keyExtractor={({nome})=> nome}
-            ListaHeaderComponent={()=>{
-                return <>
-                
-                </>
+            ListHeaderComponent={()=> {
+                return  <>
+                        
+                        </>
             }}
     </FlatList>
-
 }
 
 const estilos = StyleSheet.create({
     titulo:{
-        color:"rgba(194, 236, 255, 0)",
+        color:"#464646",
         fontWeight:"bold",
         marginTop:32,
         marginBottom:8,
@@ -29,4 +28,3 @@ const estilos = StyleSheet.create({
         paddingHorizontal:16,
     }
 })
-import { FlatList, StyleSheet, View } from "react-native-web";
